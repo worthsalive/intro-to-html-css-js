@@ -31,13 +31,13 @@ body{
 .container {
     display: flex;
     justify-content: center;
-    flex-grow: 1;
+    flex-grow: 0.5;
     align-items: center;
     width: 95%;
-    max-width: 800px;
-    padding: 1.5rem;
+    max-width: 600px;
+    padding: 1rem;
     gap:1rem;
-    background:rgba(200,200,200,.9);
+    background:rgba(200,200,200,.8);
     border-radius: 10px ;
 
 }
