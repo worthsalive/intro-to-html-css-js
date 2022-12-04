@@ -8,7 +8,7 @@ body{
     background:lightgray;
     font-family: Arial, Helvetica, sans-serif;
     background-color:rgba(1, 107, 72, 0.8);
-    background-image:url('workspace.jpg');
+    background-image:url('/assets/image/workspace.jpg');
     background-size:cover;
     background-position: center bottom;
     background-blend-mode: multiply;
@@ -30,7 +30,8 @@ body{
 }
 .container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    flex-grow: 1;
     align-items: center;
     width: 95%;
     max-width: 800px;
@@ -80,6 +81,13 @@ input.form-input{
 }
 input.form-input:hover{
     border-color:green
+}
+
+.text-link{
+    cursor: pointer;
+}   
+.text-link:hover{
+    color:rgb(10, 95, 75)
 }
 
 .button{

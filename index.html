@@ -6,15 +6,16 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Intro to Html Webinar</title>
 
-       <link rel="stylesheet" href="style.css">
+       <link rel="stylesheet" href="assets/css/style.css">
+       
     </head>
     <body>
         <section class="form-section" id="form-section">
-            <img src="logo-sq.png" class="logo">
+            <img src="assets/image/logo-sq.png" class="logo">
             <div class="container">
 
-                <div class="login-div">
-                    <form>
+                <div class="login-div" id="login-div">
+                    <form name="login-form">
                         <h1 class="form-title">Login form</h1>
                         <div class="input-group">
                             <label for="username" class="input-label">Username</label>
@@ -28,12 +29,13 @@
                         <div class="input-group">
                             <button type="submit" class="button">Login</button>
                         </div>
+                        <span> Don't have account? <b class="text-link" onclick="toggleLoginRegister()">Register</b></span>
                     </form>
                 </div>
 
 
-                <div class="registration-div">
-                    <form>
+                <div class="registration-div hidden" id="register-div">
+                    <form id="reg-form" name="">
                         <h1 class="form-title">Registration form</h1>
                         <div class="input-group">
                             <input type="text" name="username" class="form-input" id="reg_username" placeholder="Enter your Username">
@@ -47,11 +49,12 @@
                         <div class="input-group">
                             <input type="submit" class="button" value="Register">
                         </div>
+                        <span> Don't have account? <b class="text-link"  onclick="toggleLoginRegister()">Login</b></span>
+
                     </form>
                 </div>
             </div>
         </section>
-
-        <br>
+        <script src="assets/js/index.js"></script>
     </body>
 </html>
